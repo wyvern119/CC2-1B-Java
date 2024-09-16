@@ -1,3 +1,9 @@
+/*
+Padilla, Renzo Ymanuel L.
+September 9, 2024
+Laboratory Challenge 2
+*/
+
 public class RectangleCC2Padilla {
     public static void main(String[] args) {
 
