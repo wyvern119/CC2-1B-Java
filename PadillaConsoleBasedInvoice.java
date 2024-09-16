@@ -1,3 +1,9 @@
+/*
+Padilla, Renzo Ymanuel L.
+September 6, 2024
+Laboratory Challenge 1
+*/
+
 public class PadillaConsoleBasedInvoice {
     public static void main(String[] args){
 
