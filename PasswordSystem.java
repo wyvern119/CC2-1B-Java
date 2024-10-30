@@ -12,8 +12,11 @@ public class PasswordSystem {
 
         //declaration of the variables
         Scanner input = new Scanner(System.in);
-        String pass;
+        String pass, pattern;
         boolean valid = false;
+
+        //initialization of the regex pattern for checking the contents of the password
+        pattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}";
 
         //initialization of the loop using do-while
         do {
@@ -24,25 +27,17 @@ public class PasswordSystem {
             //checks if the input is invalid
             if (pass.length()<8) {
                 valid = false;
-                System.out.println("Password must have at least 8 letters, one capital letter, and one number!");
+                System.out.println("Password must have at least 8 letters!");
 
                 //continues the program to check
                 continue;
             }
-            //the use of for loop for checking if it contains capital letters and numbers
-            for (int i = 0; i < pass.length(); i++) {
-                char c = pass.charAt(i);
-
-                //checks whether the symbols in the input is valid or not
-                if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z') || ('0' <= c && c <= '9')) {
-
-                    //registers the user password as valid
-                    valid = true;
-                } else {
-                    System.out.println("Only letters and digits are acceptable!");
-                    valid = false;
-                    break;
-                }
+            //checks if the input matches regex pattern
+            if (pass.matches(pattern)) {
+                valid = true;
+            } else {
+                valid = false;
+                System.out.println("Password must have at least a capital letter and number!");
             }
         }
         //if the password is valid, it ends the program
@@ -50,4 +45,3 @@ public class PasswordSystem {
         System.out.println("Your password is valid!");
     }
 }
-
