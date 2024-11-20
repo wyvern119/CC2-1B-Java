@@ -12,14 +12,15 @@ public class InventoryManagement {
         
         //version 1: predefined
         /*
-        //initialization of arrays
+        //declaration of arrays
         int[] price = {200, 100, 350, 320, 190, 140, 40, 50, 65, 120};
         int[] quantity = {10, 6, 8, 3, 7, 9, 3, 7, 6, 1};
         
         //loops through the arrays to calculate the total value and displays output
         for (int ctr = 0; ctr < 10; ctr++) {
             int tValue = price[ctr] * quantity[ctr];
-            System.out.println("Total Value[" + (ctr+1) + "]: " + tValue);
+            System.out.println("Stock [" + (ctr+1) + "]: " + quantity[ctr] + " " + price[ctr]);
+            System.out.println("Total Value[" + (ctr+1) + "]:" + tValue + "\n");
         }
         */
         
@@ -33,7 +34,7 @@ public class InventoryManagement {
         
         //loop for storing the stock quantity and cost
         for (int ctr = 0; ctr < 10; ctr++) {
-            System.out.print("Enter Stock Level [" + (ctr+1) + "]: ");
+            System.out.print("Enter Stock Price [" + (ctr+1) + "]: ");
             price[ctr] = input.nextInt();
             
             System.out.print("Enter Stock Quantity [" + (ctr+1) + "]: ");
