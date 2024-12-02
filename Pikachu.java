@@ -9,7 +9,7 @@ public class Pikachu extends Canvas {
         pixel.fillOval(120, 160, 240, 140);
         
         pixel.setColor(Color.YELLOW);
-        pixel.fillOval(125, 95, 230, 200);
+        pixel.fillOval(140, 97, 200, 170);
         
         //cheeks
         pixel.setColor(Color.RED);
@@ -30,6 +30,12 @@ public class Pikachu extends Canvas {
         
         pixel.setColor(Color.YELLOW);
         pixel.fillOval(205, 175, 40, 50);
+        
+        pixel.setColor(Color.YELLOW);
+        pixel.fillOval(185, 195, 30, 30);
+        
+        pixel.setColor(Color.YELLOW);
+        pixel.fillOval(265, 195, 30, 30);
         
         //nose
         pixel.setColor(Color.BLACK);
