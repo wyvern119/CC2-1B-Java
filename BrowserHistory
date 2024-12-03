@@ -97,7 +97,7 @@ public class DoublyLinkedList {
     
 }
 
-public class DoublyLinkedList { 
+public class BrowserHistory { 
    // Defined as above   
 }    
 
